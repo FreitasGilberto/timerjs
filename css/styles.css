@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    font-size: 32px;
+    text-shadow: -1px 0px 15px rgba(0,0,0,0.25);
+    color: lightgray;
+}
+
+.number {
+    display: inline-block;
+    width: 140px;
+    font-size: 128px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-shadow: -1px 0px 15px rgba(37, 27, 27, 0.25);
+    border: none;
+    color: lightgray;
+    background-color: transparent;
+
+}
+
+.buttons button {
+    margin: 0 7px;
+    padding: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+#play {
+    background-image: url('../img/play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#stop {
+    background-image: url('../img/stop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#play:active {
+    background-color: lightgreen;
+}
+
+#stop:active {
+    background-color: lightcoral;
+}
